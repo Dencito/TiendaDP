@@ -563,6 +563,7 @@ body {
   .contenedor .pedidos form .contacto input {
     font-size: 1.2rem;
     padding: 5px;
+    width: 100%;
   }
   
   .contenedor .pedidos form .contacto label {
