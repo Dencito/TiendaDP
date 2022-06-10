@@ -547,6 +547,7 @@ body {
   }
   
   .contenedor .pedidos form legend {
+    width: 100%;
     font-size: 2rem;
     font-weight: 600;
   }
@@ -941,7 +942,7 @@ body {
   .contenedor .pedidos {
     width: 90vw;
   }
-
+}
 @media screen  and (max-width:550px) {
   .menuHamburguesa input:checked ~ label {
     left: 65vw;
@@ -969,4 +970,104 @@ body {
   }
 }
 
+@media screen  and (max-width:350px) {
+  .menuHamburguesa input:checked ~ label {
+    left: 35vw;
+  }
+
+  .menuHamburguesa .menu2 ul li {
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .quienesSomos h1 {
+    font-size: 2.2rem;
+  }
+  
+  .quienesSomos .contenido p {
+    font-size: 1.2rem;
+  }
+
+  .porqueComprarnos h1 {
+    font-size: 2.2rem;
+  }
+
+  .porqueComprarnos p {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .porqueComprarnos .imgsPorqueComprarnos img {
+    width: 80%;
+  }
+
+  .contenedor .pedidos form .entrega .mensaje textarea {
+    max-width: 190px;
+    max-height: 250px;
+    min-width: 100px;
+    min-height: 100px;
+    margin: auto;
+    padding: 5px;
+    font-size: 1.1rem;
+    border: 2px solid #551ab5;
+  }
+  
+  .contenedor .indumentarias h2 {
+    font-size: 2.5rem;
+  }
+
+  .contenedor .indumentarias .galeria .imagen picture a {
+    font-size: 1.2rem;
+  }
+
+  .contenedor .indumentarias .galeria .imagenCamisas picture a {
+    font-size: 1.2rem;
+  }
+
+  .contenedor .indumentarias .galeria .imagenPantalones picture a {
+    font-size: 1.2rem;
+  }
+
+  .contenedor .indumentarias .galeria .imagenTrajes picture a {
+    font-size: 1.2rem;
+  }
+
+  .contenedor .indumentarias .galeria .imagenBuzos picture a {
+    font-size: 1.2rem;
+  }
+
+  .contenedor .pedidos h2 {
+    font-size: 2.5rem;
+  }
+
+  .contenedor .pedidos form legend {
+    font-size: 1.7rem;
+  }
+
+  .contenedor .pedidos form .contacto input {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .contenedor .pedidos form .contacto label {
+    font-size: 1.2rem;
+  }
+
+  .contenedor .pedidos form .entrega .botones {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .contenedor .pedidos form .entrega .botones input{
+    margin: 20px auto;
+  }
+
+  .contenedor .ubicacion h2 {
+    font-size: 2.5rem;
+  }
+
+  .redesSociales h1 {
+    font-size: 2.5rem;
+  }
 }
+
