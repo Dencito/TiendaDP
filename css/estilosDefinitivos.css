@@ -970,9 +970,9 @@ body {
   }
 }
 
-@media screen  and (max-width:350px) {
+@media screen  and (max-width:400px) {
   .menuHamburguesa input:checked ~ label {
-    left: 35vw;
+    left: 50vw;
   }
 
   .menuHamburguesa .menu2 ul li {
