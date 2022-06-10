@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/estilosDefinitivos.css">
+	<link rel="shortcut icon" href="../img/icons/iconWebTrajes.png">
+    <title>Trajes de DPG</title>
+</head>
+<body>
+	<!-- ----------------------MENU---------------- -->
+	<header class="encabezado">
+		<div class="logo">
+			<a href="../index.html"><img src="../img/logoDP.png" alt="Logo de DPG"></a>
+		</div>
+		<div class="menuHamburguesa">
+			<input type="checkbox" id="menu">
+			<label for="menu"><img src="../img/icons/iconoMenu.png" alt="Menu Desplegable de DPG" class="menuDesplegable"> </label>
+			<nav class="menu2">
+				<ul>
+					<li>
+						<a href="calzados.html">Calzados</a>
+					</li>
+					<li>
+						<a href="camisas.html">Camisas</a>
+					</li>
+					<li>
+						<a href="pantalones.html">Pantalones</a>
+					</li>
+					<li>
+						<a href="trajes.html">Trajes</a>
+					</li>
+					<li>
+						<a href="buzos.html">Buzos</a>
+					</li>
+				</ul>
+			</nav> 
+		</div>
+		<nav class="menu">
+			<ul>
+				<li>
+					<a href="calzados.html">Calzados</a>
+				</li>
+				<li>
+					<a href="camisas.html">Camisas</a>
+				</li>
+				<li>
+					<a href="pantalones.html">Pantalones</a>
+				</li>
+				<li>
+					<a href="trajes.html">Trajes</a>
+				</li>
+				<li>
+					<a href="buzos.html">Buzos</a>
+				</li>
+			</ul>
+		</nav> 
+	
+	</header> 
+	<!-- ----------------------CONTENEDOR DEL CONTENIDO---------------- -->
+	<div class="contenedor" id="inicio">
+		<!-- ----------------------FILTROS---------------- -->
+		<aside class="filtros filtrosTrajes"> <!-- para filtrar, lo voy hacer con css y los inputs con un (:pulse ~ [lo que quiero filtrar o eliminar]) es css -->
+			<h2>Filtros</h2>
+			<div class="tiposDeFiltro">
+				<div class="generos">
+					<h4>Genero</h4>
+					<div class="genero">
+						<div class="alignGenero">
+							<input type="checkbox" name="femenino" id="generoFemenino">
+							<label for="generoFemenino">Femenino</label>
+						</div>
+						<div class="alignGenero">
+							<input type="checkbox" name="masculino" id="generoMasculino">
+							<label for="generoMasculino">masculino</label>
+						</div>
+						<div class="alignGenero">
+							<input type="checkbox" name="niño" id="generoNiño">
+							<label for="generoNiño">Niño</label>
+						</div>
+						<div class="alignGenero">
+							<input type="checkbox" name="niña" id="generoNiña">
+							<label for="generoNiña">Niña</label>
+						</div>
+					</div>
+				</div>
+				<div class="talles">
+					<h4>Talle</h4>
+					<div class="talle">
+						<div class="alignTalle">
+							<input type="checkbox" name="talle_S" id="talleS">
+							<label for="talleS">Talle S</label>
+						</div>
+
+						<div class="alignTalle">
+							<input type="checkbox" name="talle_M" id="talleM">
+							<label for="talleM">Talle M</label>
+						</div>
+
+						<div class="alignTalle">
+							<input type="checkbox" name="talle_L" id="talleL">
+							<label for="talleL">Talle L</label>
+						</div>
+
+						<div class="alignTalle">
+							<input type="checkbox" name="talle_XL" id="talleXL">
+							<label for="talleXL">Talle XL</label>
+						</div>
+
+						<div class="alignTalle">
+							<input type="checkbox" name="talle_XXL" id="talleXXL">
+							<label for="talleXXL">Talle XXL</label>
+						</div>
+						
+						<div class="alignTalle">
+							<input type="checkbox" name="talle_3XL" id="talle3XL">
+							<label for="talle3XL">Talle 3XL</label>
+						</div>
+
+						<div class="alignTalle">
+							<input type="checkbox" name="talle_4XL" id="talle4XL">
+							<label for="talle4XL">Talle 4XL</label>
+						</div>
+						
+						<div class="alignTalle">
+							<input type="checkbox" name="talle_5XL" id="talle5XL">
+							<label for="talle5XL">Talle 5XL</label>
+						</div>
+					</div>
+
+				</div>
+				<div class="colores">
+					<h4>Color</h4>
+					<div class="color">
+						<div class="alignColor">
+							<input type="checkbox" name="color_Rojo" id="colorRojo">
+							<label for="colorRojo">🔴Rojo</label>
+						</div>
+
+						<div class="alignColor">
+							<input type="checkbox" name="color_Amarillo" id="colorAmarillo">
+							<label for="colorAmarillo">🟡Amarillo</label>
+						</div>
+						
+						<div class="alignColor">
+							<input type="checkbox" name="color_Verde" id="colorVerde">
+							<label for="colorVerde">🟢Verde</label>
+						</div>
+						
+						<div class="alignColor">
+							<input type="checkbox" name="color_Blanco" id="colorBlanco">
+							<label for="colorBlanco">⚪Blanco</label>
+						</div>
+						
+						<div class="alignColor">
+							<input type="checkbox" name="color_Negro" id="colorNegro">
+							<label for="colorNegro">⚫Negro</label>
+						</div>
+						
+						<div class="alignColor">
+							<input type="checkbox" name="color_Azul" id="colorAzul">
+							<label for="colorAzul">🔵Azul</label>
+						</div>
+						
+						<div class="alignColor">
+							<input type="checkbox" name="colorVioleta" id="colorVioleta">
+							<label for="colorVioleta">🟣Violeta</label>
+						</div>
+						
+						<div class="alignColor">
+							<input type="checkbox" name="color_Marron" id="colorMarron">
+							<label for="colorMarron">🟤Marron</label>
+						</div>
+					</div>
+				</div>
+				<div class="materiales">
+					<h4>Material</h4>
+					<div class="material">						
+						<div class="alignMaterial">
+							<input type="checkbox" name="material_Algodon" id="materialAlgodon">
+							<label for="materialAlgodon">Algodon</label>
+						</div>
+						
+						<div class="alignMaterial">
+							<input type="checkbox" name="material_Lino" id="materialLino">
+							<label for="materialLino">Lino</label>
+						</div>
+						
+						<div class="alignMaterial">
+							<input type="checkbox" name="material_Seda" id="materialSeda">
+							<label for="materialSeda">Seda</label>
+						</div>
+						
+						<div class="alignMaterial">
+							<input type="checkbox" name="material_TejidoElastico" id="materialTejidoElastico">
+							<label for="materiaTejidoElastico">Tejido elastico</label>
+						</div>
+						
+						<div class="alignMaterial">
+							<input type="checkbox" name="material_Lana" id="materialLana">
+							<label for="materialLana">Lana</label>
+						</div>
+					</div>
+
+				</div>
+				<div class="marcas">
+					<h4>Marca</h4>
+					<p>Proximamente...</p>
+				</div>
+			</div>
+		</aside>
+		<!-- --------------- PRODUCTOS ---------- -->
+		<section class="indumentarias">
+			<h2>Trajes</h2>
+			<div class="galeria">
+				<div class="imagenTrajes">
+					<picture>
+						<img src="../img/indumentaria/trajes/traje1.jpg" alt="Imagen 1 de trajes de DPG" class="indumentaria">
+						<p>$70</p>
+						<a href="#realizarPedido">Realizar Pedido</a>
+					</picture>
+				</div>
+				<div class="imagenTrajes">
+					<picture>
+						<img src="../img/indumentaria/trajes/traje2.jpg" alt="Imagen 2 de trajes de DPG" class="indumentaria">
+						<p>$80</p>
+						<a href="#realizarPedido">Realizar Pedido</a>
+					</picture>
+				</div>
+				<div class="imagenTrajes">
+					<picture>
+						<img src="../img/indumentaria/trajes/traje3.jpg" alt="Imagen 3 de trajes de DPG" class="indumentaria">
+						<p>$85</p>
+						<a href="#realizarPedido">Realizar Pedido</a>
+					</picture>
+				</div>
+				<div class="imagenTrajes">
+					<picture>
+						<img src="../img/indumentaria/trajes/traje4.jpg" alt="Imagen 4 de trajes de DPG" class="indumentaria">
+						<p>$68</p>
+						<a href="#realizarPedido">Realizar Pedido</a>
+					</picture>
+				</div>
+				<div class="imagenTrajes">
+					<picture>
+						<img src="../img/indumentaria/trajes/traje5.jpg" alt="Imagen 5 de trajes de DPG" class="indumentaria">
+						<p>$38</p>
+						<a href="#realizarPedido">Realizar Pedido</a>
+					</picture>
+				</div>
+				<div class="imagenTrajes">
+					<picture>
+						<img src="../img/indumentaria/trajes/traje6.jpg" alt="Imagen 6 de trajes de DPG" class="indumentaria">
+						<p>$120</p>
+						<a href="#realizarPedido">Realizar Pedido</a>
+					</picture>
+				</div>
+				<div class="imagenTrajes">
+					<picture>
+						<img src="../img/indumentaria/trajes/traje7.jpg" alt="Imagen 7 de trajes de DPG" class="indumentaria">
+						<p>$113</p>
+						<a href="#realizarPedido">Realizar Pedido</a>
+					</picture>
+				</div>
+				<div class="imagenTrajes">
+					<picture>
+						<img src="../img/indumentaria/trajes/traje8.jpg" alt="Imagen 8 de trajes de DPG" class="indumentaria">
+						<p>$150</p>
+						<a href="#realizarPedido">Realizar Pedido</a>
+					</picture>
+				</div>
+				<div class="imagenTrajes">
+					<picture>
+						<img src="../img/indumentaria/trajes/traje9.jpg" alt="Imagen 9 de trajes de DPG" class="indumentaria">
+						<p>$230</p>
+						<a href="#realizarPedido">Realizar Pedido</a>
+					</picture>
+				</div>
+				<div class="imagenTrajes">
+					<picture>
+						<img src="../img/indumentaria/trajes/traje10.jpg" alt="Imagen 10 de trajes de DPG" class="indumentaria">
+						<p>$279</p>
+						<a href="#realizarPedido">Realizar Pedido</a>
+					</picture>
+				</div>
+				<div class="imagenTrajes">
+					<picture>
+						<img src="../img/indumentaria/trajes/traje11.jpg" alt="Imagen 11 de trajes de DPG" class="indumentaria">
+						<p>$240</p>
+						<a href="#realizarPedido">Realizar Pedido</a>
+					</picture>
+				</div>
+				<div class="imagenTrajes">
+					<picture>
+						<img src="../img/indumentaria/trajes/traje12.jpg" alt="Imagen 12 de trajes de DPG" class="indumentaria">
+						<p>$200</p>
+						<a href="#realizarPedido">Realizar Pedido</a>
+					</picture>
+				</div>
+			</div>	
+		</section>
+		<!-- --------------------REALIZAR PEDIDO --------------- -->
+		<section class="pedidos" id="realizarPedido">
+			<h2>Realizar pedido</h2>
+			<form action="pedido.php" method="post">
+				<fieldset class="contacto">
+					<legend>Contacto</legend>
+					<label for="nombre">Nombre:</label>
+					<input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+
+					<label for="apellido">Apellido:</label>
+					<input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" placeholder="email@gmail.com" required>
+				</fieldset>
+
+				<fieldset class="compraProductos">
+					<legend>Compra de producto</legend>
+					<p>Elija el/los Traje que deseé llevarse:</p>
+					<div class="opcionesDeCompra">
+						<div class="opcionTrajea">
+							<label for="eligueCamisa">Traje</label>
+							<select name="eligue_Traje" id="eligueTraje">
+								<option value="trajeDefault">---</option>
+								<option value="traje1">1</option>
+								<option value="traje2">2</option>
+								<option value="traje3">3</option>
+								<option value="traje4">4</option>
+								<option value="traje5">5</option>
+								<option value="traje6">6</option>
+								<option value="traje7">7</option>
+								<option value="traje8">8</option>
+								<option value="traje9">9</option>
+								<option value="traje10">10</option>
+								<option value="traje11">11</option>
+								<option value="traje12">12</option>
+							</select>
+						</div>
+
+						<div class="opcionTalle">
+							<label for="eligeTalleCamisa">Talle</label>
+							<select name="elige_Talle" id="eligeTalle">
+								<option value="talle-Default">---</option>
+								<option value="talle-S">S</option>
+								<option value="talle-M">M</option>
+								<option value="talle-L">L</option>
+								<option value="talle-XL">XL</option>
+								<option value="talle-XXL">XXL</option>
+								<option value="talle-3XL">3XL</option>
+								<option value="talle-4XL">4XL</option>
+								<option value="talle-5XL">5XL</option>
+
+							</select>
+						</div>
+
+						<div class="opcionColor">
+							<label for="eligeColor">Color</label>
+							<select name="elige_Color" id="eligeColor">
+								<option value="color-Default">---</option>
+								<option value="color-Rojo">🟥</option>
+								<option value="color-Amarillo">🟨</option>
+								<option value="color-Verde">🟩</option>
+								<option value="color-Blanco">⬜</option>
+								<option value="color-Negro">⬛</option>
+								<option value="color-Azul">🟦</option>
+								<option value="color-Violeta">🟪</option>
+								<option value="color-Marron">🟫</option>
+
+							</select>
+						</div>
+					</div>
+
+				</fieldset>
+
+				<fieldset class="entrega">
+					<legend>Entrega</legend>
+					<div class="retiro">
+						<label for="local">Retira en el local</label>
+						<input type="radio" id="local" value="local" name="entrega">
+						<label for="envio">Envio a domicilio</label>
+						<input type="radio" id="envio" name="entrega" value="envio">
+					</div>
+					<div class="localidad">
+						<label for="localidad">Localidad</label>
+						<select name="localidad" id="localidad">
+							<option value="caba">CABA</option>
+							<option value="bsas">Buenos Aires</option>
+							<option value="interior">Interior del pais...</option>
+						</select>
+					</div>
+					<div class="mensaje">
+						<label for="mensaje">Comentario</label>
+						<textarea cols="30" rows="10" placeholder="Algun inconveniente"></textarea>
+					</div>
+					<div class="botones">
+						<input type="submit" value="Pedir producto">
+						<input type="reset" value="Cancelar">
+					</div>
+				</fieldset>
+			</form>
+		</section>
+
+		<!-- --------------------UBICACIÓN --------------- -->
+		<section class="ubicacion">
+			<h2>Ubicacion</h2>
+			<div class="horarios">
+				<p>Lunes a Viernes: 8 AM - 20 PM 🕗</p>
+				<p>Sabados y Feriados: 10 AM 16 PM 🕙</p>
+			</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.3774852133915!2d-58.481208068141!3d-34.6289378619562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc98dad4f2227%3A0x9e6e967beac7241c!2sAvellaneda%20Tiendas!5e0!3m2!1ses!2sar!4v1652883342884!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</section>
+
+		<!-- --------------------REDES SOCIALES --------------- -->
+		<div class="redesSociales">
+			<h1>Redes Sociales</h1>
+			<picture class="iconos">
+				<a href="https://www.facebook.com" target="_blank"><img src="../img/icons/iconoFacebook.png" alt="Icono de ........"></a>
+				<a href="https://www.github.com" target="_blank"><img src="../img/icons/iconoGithub.png" alt="Icono de ........"></a>
+				<a href="https://www.instagram.com" target="_blank"><img src="../img/icons/iconoInstagram.png" alt="Icono de ........"></a>
+				<a href="https://www.telegram.com" target="_blank"><img src="../img/icons/iconoTelegram.png" alt="Icono de ........"></a>
+				<a href="https://www.twitter.com" target="_blank"><img src="../img/icons/iconoTwitter.png" alt="Icono de ........"></a>
+				<a href="https://whatsapp.com" target="_blank"><img src="../img/icons/iconoWhatsapp.png" alt="Icono de ........"></a>
+			</picture>
+		</div>
+		
+    </div>
+	<!-- --------------------FOOTER --------------- -->
+	<footer class="footer">
+		<div class="terminos">
+			<a href="#">Aviso legal</a>
+			<a href="#">Cookies</a>
+			<a href="#">Privacidad</a>
+			<a href="#">Términos y condiciones</a>
+		</div>
+		<p>Copyright © 2022 DPG</p>
+	</footer>
+	<!-- --------------------MENU VERTICAL FLOTANTE --------------- -->
+	<div class="menuVerticalFlotante">
+		<a href="#inicio"><img src="../img/icons/flecha-arriba.png" alt=""></a>
+	</div>
+</body>
+</html>

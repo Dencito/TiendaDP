@@ -1,0 +1,972 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: rgb(160, 180, 216);
+}
+/* EL INDEX------------------- */
+.cajaPadre{
+    display: flex;
+    flex-direction: column;
+  }
+  /*  ---------------QUIENES SOMOS----------  */
+  
+  .quienesSomos {
+    margin: 90px auto 20px auto;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 15px #000;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .quienesSomos h1 {
+    padding-top: 30px;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #553079;
+    margin: 30px auto;
+    width: 100%;
+    height: auto;
+  }
+  .quienesSomos .contenido {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    
+    
+  
+  }
+  
+  .quienesSomos p {
+    width: 45%;
+    margin: auto 20px;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  .quienesSomos p span {
+    color: #553079;
+    font-weight: 600;
+  }
+  
+  .quienesSomos img {
+    width: 55%;
+    height: 700px;
+    border-radius: 5px;
+    padding: 30px;
+  }
+  
+  
+  /* -- ---------------PORQUE COMPRARNOS---------- -- */
+  .porqueComprarnos {
+    width: 80%;
+    height: auto;
+    margin: 0 auto 20px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+  }
+  .porqueComprarnos h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #553079;
+    margin: 30px auto;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .porqueComprarnos p {
+    margin: auto;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: 300;
+    width: 70%;
+  }
+
+  .porqueComprarnos p span {
+    color: #553079;
+    font-weight: 600;
+  }
+  
+  .porqueComprarnos .imgsPorqueComprarnos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .porqueComprarnos .imgsPorqueComprarnos img {
+    margin: 30px 0 50px 0;
+    width: 440px;
+    height: 400px;
+    box-shadow: 15px 15px 15px #000;
+    border-radius: 5px;
+  }
+  /* ---------------ALGUNAS COSAS QUE VENDEMOS---------- */
+  .algunasCosasQueVendemos {
+    width: 80%;
+    height: auto;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 10px #000;
+  }
+  
+  .algunasCosasQueVendemos h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #553079;
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .algunasCosasQueVendemos .galeria {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow:hidden;
+  }
+  
+  .algunasCosasQueVendemos .galeria .calzado {
+    width: 450px;
+    height: 300px;
+  }
+  
+  .algunasCosasQueVendemos .galeria img {
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+    padding: 30px;
+  }
+
+  .redesSocialesIndex {
+      padding: 50px;
+  }
+/* TODOS LOS DEMAS HTMLS------------------------------------------------------------------------------------------------------ */
+/* --------------- MENU ---------- */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #dddd;
+    border-radius: 0 0 10px 15px;
+    animation: aparecerMenu 1s ease-in;
+}
+
+@keyframes aparecerMenu {
+    0% {
+      transform: translate(0, -75px);
+    }
+}
+
+.encabezado .menuHamburguesa {
+    display: none;
+}
+.encabezado .logo {
+  width: 100%;
+  margin: auto;
+}
+
+.encabezado .logo a {
+    width: auto;
+    margin: auto auto auto 30px;
+}
+
+.encabezado .logo a img {
+    width: 80px;
+    height: auto;
+    margin: auto;
+}
+
+.encabezado .menu {
+    width: 100%;
+    height: 100%;
+}
+
+.encabezado .menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 100%;
+    list-style: none;
+}
+
+.encabezado .menu ul li {
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+.encabezado .menu ul li a {
+    color: #551A8B;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.encabezado .menu ul li a:hover {
+    text-decoration: underline;
+}
+.contenedor {
+    width: 90%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 30px;
+    grid-template-areas: 
+    "filtro galeria galeria"
+    "form form form"
+    "ubicacion ubicacion ubicacion"
+    "rrss rrss rrss";
+}
+
+/* --------------- FILTROS ---------- */
+.contenedor .filtros {
+    width: 250px;
+    height: 47%;
+    grid-area: filtro;
+    background-color: #27b1d3a9;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow:  0 0 15px #000;
+  }
+  
+  .contenedor .filtrosCamisas {
+    height: 28%;
+  }
+  
+  .contenedor .filtrosPantalones {
+    height: 25%;
+  }
+  
+  .contenedor .filtrosTrajes {
+    height: 25%;
+  }
+  
+  .contenedor .filtrosBuzos {
+    height: 25%;
+  }
+  
+  .contenedor .filtros h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .contenedor .filtros div {
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+  }
+  
+  .contenedor .filtros div h4 {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  
+  .contenedor .filtros input {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .contenedor .filtros label {
+    cursor: pointer;
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .contenedor .filtros label:hover {
+    color: #551A8B;
+    text-decoration: underline;
+  }
+  .contenedor .filtros .generos .genero {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  
+  /* --------------- INDUMENTARIAS ---------- */
+  .contenedor .indumentarias {
+      grid-area: galeria;
+      width: 100%;
+      border-radius: 15px;
+      background: #fff;
+  }
+
+  .contenedor .indumentarias h2 {
+    margin-top: 20px;
+    font-size: 3rem;
+    text-align: center;
+    color: #553079;
+    font-weight: 700;
+  }
+
+  .contenedor .indumentarias .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      grid-gap: 30px;
+      margin: 60px 0;
+      width: 100%;
+  }
+
+
+  .contenedor .indumentarias .galeria .imagen {
+      margin: 50px auto;
+      width: 400px;
+  }
+
+  .contenedor .indumentarias .galeria .imagen picture {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+  }
+
+  .contenedor .indumentarias .galeria .imagen picture img {
+      width: 100%;
+      max-height: 210px;
+  }
+
+  .contenedor .indumentarias .galeria .imagen picture p {
+      font-size: 2rem;
+      color: #27b1d3;
+      font-weight: 800;
+  }
+
+  .contenedor .indumentarias .galeria .imagen picture a {
+      display: block;
+      font-size: 1.6rem;
+      text-align: center;
+      text-decoration: none;
+      background: #dddd;
+      font-weight: 500;
+      border-radius: 15px;
+      padding: 5px;
+      margin:  50px auto 0 auto;
+      width: 220px;
+  }
+
+  /* indumentaria para camisas */
+  .contenedor .indumentarias .galeria .imagenCamisas {
+    margin: 50px auto;
+    width: 400px;
+}
+
+.contenedor .indumentarias .galeria .imagenCamisas picture {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.contenedor .indumentarias .galeria .imagenCamisas picture img {
+    width: 100%;
+    height: 500px;
+}
+
+.contenedor .indumentarias .galeria .imagenCamisas picture p {
+    font-size: 2rem;
+    color: #27b1d3;
+    font-weight: 800;
+}
+
+.contenedor .indumentarias .galeria .imagenCamisas picture a {
+    display: block;
+    font-size: 1.6rem;
+    text-align: center;
+    text-decoration: none;
+    background: #dddd;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 5px;
+    margin:  0 auto;
+    width: 220px;
+}
+
+/* indumentaria para pantalones */
+.contenedor .indumentarias .galeria .imagenPantalones {
+    margin: 50px auto;
+    width: 380px;
+}
+
+.contenedor .indumentarias .galeria .imagenPantalones picture {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.contenedor .indumentarias .galeria .imagenPantalones picture img {
+    width: 100%;
+    height: 600px;
+}
+
+.contenedor .indumentarias .galeria .imagenPantalones picture p {
+    font-size: 2rem;
+    color: #27b1d3;
+    font-weight: 800;
+}
+
+.contenedor .indumentarias .galeria .imagenPantalones picture a {
+    display: block;
+    font-size: 1.6rem;
+    text-align: center;
+    text-decoration: none;
+    background: #dddd;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 5px;
+    margin:  0 auto;
+    width: 220px;
+}
+
+/* indumentaria para trajes */
+.contenedor .indumentarias .galeria .imagenTrajes {
+    margin: 50px auto;
+    width: 370px;
+}
+
+.contenedor .indumentarias .galeria .imagenTrajes picture {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.contenedor .indumentarias .galeria .imagenTrajes picture img {
+    width: 100%;
+    height: 600px;
+}
+
+.contenedor .indumentarias .galeria .imagenTrajes picture p {
+    font-size: 2rem;
+    color: #27b1d3;
+    font-weight: 800;
+}
+
+.contenedor .indumentarias .galeria .imagenTrajes picture a {
+    display: block;
+    font-size: 1.6rem;
+    text-align: center;
+    text-decoration: none;
+    background: #dddd;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 5px;
+    margin:  0 auto;
+    width: 220px;
+}
+
+/* indumentaria para buzos */
+.contenedor .indumentarias .galeria .imagenBuzos {
+    margin: 50px auto;
+    width: 370px;
+}
+
+.contenedor .indumentarias .galeria .imagenBuzos picture {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.contenedor .indumentarias .galeria .imagenBuzos picture img {
+    width: 100%;
+    height: 600px;
+}
+
+.contenedor .indumentarias .galeria .imagenBuzos picture p {
+    font-size: 2rem;
+    color: #27b1d3;
+    font-weight: 800;
+}
+
+.contenedor .indumentarias .galeria .imagenBuzos picture a {
+    display: block;
+    font-size: 1.6rem;
+    text-align: center;
+    text-decoration: none;
+    background: #dddd;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 5px;
+    margin:  0 auto;
+    width: 220px;
+}
+
+   /* --------------- PEDIDOS ---------- */
+  .contenedor .pedidos {
+    width: auto;
+    grid-area: form;
+    margin: 100px auto;
+    box-shadow: 0 0 15px #000;
+    border-radius: 15px;
+    padding: 5px;
+  }
+  
+  .contenedor .pedidos input {
+    display: inline-block;
+  }
+  
+  .contenedor .pedidos h2 {
+    margin-top: 20px;
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+  }
+  
+  .contenedor .pedidos form fieldset {
+    border: #551ab586  5px groove;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  .contenedor .pedidos form legend {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .contenedor .pedidos form .contacto {
+    margin: 30px 0 10px 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .contenedor .pedidos form .contacto input {
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+  
+  .contenedor .pedidos form .contacto label {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .contenedor .pedidos form .compraProductos {
+    margin: 30px 0 10px 0;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+    margin: auto;
+  }
+  
+  .contenedor .pedidos form .compraProductos p {
+    font-size: 1.6rem;
+  }
+  
+  .contenedor .pedidos form .compraProductos div {
+    display: inline-block;
+    margin: 5px 20px;
+  }
+  
+  .contenedor .pedidos form .compraProductos div label {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  
+  .contenedor .pedidos form .compraProductos div select {
+    font-size: 1.4rem;
+  }
+  
+  .contenedor .pedidos form .entrega {
+    margin: 30px 0 10px 0;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+    margin: auto;
+    width: 100%;
+  }
+  
+  .contenedor .pedidos form .entrega .retiro {
+    margin: auto;
+  }
+  
+  .contenedor .pedidos form .entrega .localidad {
+    margin: auto;
+  }
+  
+  .contenedor .pedidos form .entrega div input {
+    margin: 0 10px 0 0;
+  }
+  
+  .contenedor .pedidos form .entrega div label {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  
+  .contenedor .pedidos form .entrega div select {
+    font-size: 1.1rem;
+  }
+  
+  .contenedor .pedidos form .entrega .mensaje {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contenedor .pedidos form .entrega .mensaje label {
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 10px;
+  }
+  
+  .contenedor .pedidos form .entrega .mensaje textarea {
+    max-width: 500px;
+    max-height: 250px;
+    min-width: 300px;
+    min-height: 150px;
+    margin: auto;
+    padding: 5px;
+    font-size: 1.1rem;
+    border: 2px solid #551ab5;
+  }
+  
+  .contenedor .pedidos form .entrega .botones {
+    margin:  10px auto 30px auto;
+  }
+  
+  .contenedor .pedidos form .entrega .botones input{
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #000;
+    background-color: #551A8B;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  
+  .contenedor .pedidos form .entrega .botones input:hover {
+      background: #551ab5;
+      transition: .5s;
+    }
+
+
+  /* -----------------UBIACION---------------- */
+
+.contenedor .ubicacion {
+    grid-area: ubicacion;
+    margin: 20px auto 0 auto;
+  }
+  
+  .contenedor .ubicacion iframe {
+    width: 80vw;
+    min-width: 250px;
+    height: 700px;
+    min-height: 200px;
+    border-radius: 15px;
+  }
+  
+  .contenedor .ubicacion h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 800;
+  }
+  
+  .contenedor .ubicacion .horarios {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px;
+  }
+  
+  .contenedor .ubicacion .horarios p {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  /* -----------------REDES SOCIALES---------------- */
+  
+  .redesSociales {
+    grid-area: rrss;
+    margin: 20px 0 0 0;
+  }
+  
+  .redesSociales h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .redesSociales .iconos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .redesSociales .iconos a {
+    margin: 0 20px;
+  }
+  
+  .redesSociales .iconos img {
+    width: 60px;
+  }
+
+/* --------------------FOOTER --------------- */
+.footer {
+    grid-area: footer;
+    height: auto;
+    padding: 0 auto 10px auto;
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer .terminos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer .terminos a {
+    padding-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 5px;
+    color: #fff;
+  }
+  
+  .footer .terminos a:hover {
+    text-decoration: none;
+    margin: 5px;
+    text-decoration: underline;
+  }
+  
+  .footer p {
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  
+  /* --------------------MENU VERTICAL FLOTANTE --------------- */
+  
+  .menuVerticalFlotante {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .menuVerticalFlotante ul {
+    list-style: none;
+  }
+  
+  .menuVerticalFlotante ul li a {
+    font-size: 50px;
+  }
+
+
+  /* MEDIAQUERIES */
+
+  @media screen  and (max-width:1200px){
+  /* --------------------QUIENES SOMOS--------------- */
+    .quienesSomos {
+      width: 90%;
+    }
+    .quienesSomos .contenido {
+      flex-direction: column;
+    }
+
+    .quienesSomos p {
+      width: 95%;
+    }
+
+    .quienesSomos img {
+      width: 90%;
+      height: 500px;
+      margin: 20px auto;
+    }
+    
+ /* --------------------PORQUE COMPRARNOS--------------- */
+
+    .porqueComprarnos {
+      width: 90%;
+    }
+
+    .porqueComprarnos .imgsPorqueComprarnos img {
+      margin: 20px auto;
+    }
+
+    .porqueComprarnos .DeleteImgResponsive {
+      display: none;
+    }
+/* -------------------- ALGUNAS COSAS QUE VENDEMOS --------------- */
+    .algunasCosasQueVendemos {
+      width: 90%;
+    }
+    /* --------------------MENU--------------- */
+    .encabezado .menu {
+      display: none;
+    }
+    .encabezado .menuHamburguesa {
+      display: block;
+    }
+
+    .encabezado .menuHamburguesa label {
+      display: block;
+      position: relative;
+      top: -10px;
+      right:10%;
+    }
+
+    .encabezado .menuHamburguesa input {
+      display: block;
+      position: relative;
+      top: -50px;
+    }
+
+    .menuHamburguesa .menu2 {
+      top: 0;
+      display: none;
+      width: 90vw;
+      height: 50vh;
+      background-color: #D5D8DD;
+      margin: 0 auto;
+  }
+  
+  .menuHamburguesa .menu2 ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      list-style: none;
+  }
+  
+  .menuHamburguesa .menu2 ul li {
+      width: 100%;
+      height: 100%;
+      margin: 10px auto;
+      text-align: center;
+  }
+  
+  .menuHamburguesa .menu2 ul li a {
+      color: #551A8B;
+      text-decoration: none;
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 0 auto;
+  }
+  
+  .menuHamburguesa .menu2 ul li a:hover {
+      text-decoration: underline;
+      transform: 1s;
+  }
+    .menuHamburguesa input:checked ~ .menu2 {
+      display: inline-block;
+      transition: 1s ;
+    }
+
+    .menuHamburguesa input:checked ~ label {
+      left: 82vw;
+    }
+
+    .menuHamburguesa input:checked  ~ input{
+      top: -50px;
+  }
+}
+/* MEDIAQUERIE DE INDUMENTARIAS */
+@media screen  and (max-width:750px) {
+
+  .menuHamburguesa input:checked ~ label {
+    left: 75vw;
+  }
+
+  .contenedor {
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    "filtro filtro filtro"
+    "galeria galeria galeria"
+    "form form form"
+    "ubicacion ubicacion ubicacion"
+    "rrss rrss rrss";
+  }
+
+  .contenedor .filtros {
+    width: 90vw;
+    height: auto;
+  }
+
+  .contenedor .filtros .tiposDeFiltro {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contenedor .filtros .tiposDeFiltro > div {
+    width: 100px;
+    margin: 0 20px;
+  }
+
+  .contenedor .filtros label {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .contenedor .pedidos {
+    width: 90vw;
+  }
+
+@media screen  and (max-width:550px) {
+  .menuHamburguesa input:checked ~ label {
+    left: 65vw;
+  }
+
+  .quienesSomos h1 {
+    font-size: 2.2rem;
+  }
+  
+  .quienesSomos .contenido p {
+    font-size: 1.2rem;
+  }
+
+  .porqueComprarnos h1 {
+    font-size: 2.2rem;
+  }
+
+  .porqueComprarnos p {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .porqueComprarnos .imgsPorqueComprarnos img {
+    width: 80%;
+  }
+}
+
+}
