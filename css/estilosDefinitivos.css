@@ -27,6 +27,12 @@ body {
     box-shadow: 0 0 15px #000;
     border-radius: 5px 5px 0 0;
   }
+
+  @keyframes MoverTituloQuienesSomos {
+    0% {
+      transform: translate(200px, -300px);
+    }
+  }
   
   .quienesSomos h1 {
     padding-top: 30px;
@@ -37,6 +43,7 @@ body {
     margin: 30px auto;
     width: 100%;
     height: auto;
+    animation: MoverTituloQuienesSomos 1.3s ease-in-out;
   }
   .quienesSomos .contenido {
     width: 100%;
@@ -236,6 +243,7 @@ body {
     font-size: 1.7rem;
     font-weight: 500;
 }
+
 
 .encabezado .menu ul li a:hover {
     text-decoration: underline;
@@ -968,7 +976,7 @@ body {
   }
 
   .quienesSomos img {
-    width: 95vw;
+    width: 90vw;
     height: 50vh;
   }
 
