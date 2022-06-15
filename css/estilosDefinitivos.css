@@ -948,7 +948,6 @@ body {
   .menuHamburguesa input:checked ~ label {
     left: 65vw;
   }
-
   .quienesSomos h1 {
     font-size: 2.2rem;
   }
@@ -958,7 +957,12 @@ body {
   }
 
   .porqueComprarnos h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+  }
+
+  .quienesSomos img {
+    width: 95vw;
+    height: 50vh;
   }
 
   .porqueComprarnos p {
@@ -968,6 +972,22 @@ body {
 
   .porqueComprarnos .imgsPorqueComprarnos img {
     width: 80%;
+    height: 200px;
+  }
+
+  .algunasCosasQueVendemos .galeria img {
+    padding: 15%;
+    width: 90%;
+    height: 400px;
+  }
+  .algunasCosasQueVendemos h1 {
+    font-size: 2rem;
+  }
+
+  .algunasCosasQueVendemos .galeria .calzado {
+    padding: 10%;
+    width: 100%;
+    height: 200px;
   }
 }
 
