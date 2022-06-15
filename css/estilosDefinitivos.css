@@ -67,6 +67,13 @@ body {
     height: 700px;
     border-radius: 5px;
     padding: 30px;
+    animation: aparecerImgQuienesSomos 1.2s ease-out;
+  }
+
+  @keyframes aparecerImgQuienesSomos {
+    0% {
+      transform: translate(-1000px);
+    }
   }
   
   
