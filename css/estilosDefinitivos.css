@@ -105,17 +105,29 @@ body {
   
   .porqueComprarnos p {
     margin: auto;
+    margin-bottom: 30px;
     font-size: 1.5rem;
     padding: 10px;
     font-weight: 300;
-    width: 70%;
+    width: 60%;
   }
 
   .porqueComprarnos p span {
     color: #553079;
     font-weight: 600;
   }
-  
+
+  .imgsPorqueComprarnos {
+    width: 65%;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 20%;
+  }
+
+  .img-heigth {
+    height: 600px;
+  }
+/*   
   .porqueComprarnos .imgsPorqueComprarnos {
     width: 100%;
     height: auto;
@@ -123,15 +135,15 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-  }
-  
+  } */
+/*   
   .porqueComprarnos .imgsPorqueComprarnos img {
     margin: 30px 0 50px 0;
     width: 440px;
     height: 400px;
     box-shadow: 15px 15px 15px #000;
     border-radius: 5px;
-  }
+  } */
   /* ---------------ALGUNAS COSAS QUE VENDEMOS---------- */
   .algunasCosasQueVendemos {
     width: 80%;
@@ -180,73 +192,46 @@ body {
   }
 /* TODOS LOS DEMAS HTMLS------------------------------------------------------------------------------------------------------ */
 /* --------------- MENU ---------- */
-.encabezado {
-    display: flex;
-    justify-content: space-between;
-    width: 100vw;
-    height: 70px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #dddd;
-    border-radius: 0 0 10px 15px;
-    animation: aparecerMenu 1s ease-in;
+ @keyframes aparecerMenu {
+  0% {
+    transform: translate(0, -75px);
+  }
 }
 
-@keyframes aparecerMenu {
-    0% {
-      transform: translate(0, -75px);
-    }
+/* MENU CON BOOTSTRAP */
+.menu {
+position: fixed;
+animation: aparecerMenu 1s ease-in;
+width: 100%;
+height: 80px;
+top: 0;
+}
+#navbarSupportedContent {
+background-color: transparent;
+}
+.navbar-nav {
+background-color: #dddd;
+text-align: center;
+margin-right: 60px;
 }
 
-.encabezado .menuHamburguesa {
-    display: none;
-}
-.encabezado .logo {
-  width: 100%;
-  margin: auto;
+.bg-menu {
+background: #ddde;
 }
 
-.encabezado .logo a {
-    width: auto;
-    margin: auto auto auto 30px;
+.stylesLinkNav {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #551A8B;
 }
-
-.encabezado .logo a img {
-    width: 80px;
-    height: auto;
-    margin: auto;
+.stylesLinkNav:hover {
+color: #000;
+transition: 1.2s;
+text-decoration: underline;
 }
-
-.encabezado .menu {
-    width: 100%;
-    height: 100%;
-}
-
-.encabezado .menu ul {
-    display: flex;
-    justify-content: space-evenly;
-    width: 90%;
-    height: 100%;
-    list-style: none;
-}
-
-.encabezado .menu ul li {
-    margin: auto;
-    width: auto;
-    height: auto;
-}
-
-.encabezado .menu ul li a {
-    color: #551A8B;
-    text-decoration: none;
-    font-size: 1.7rem;
-    font-weight: 500;
-}
-
-
-.encabezado .menu ul li a:hover {
-    text-decoration: underline;
+.menu a img {
+width: 80px;
 }
 .contenedor {
     width: 90%;
@@ -859,82 +844,10 @@ body {
       width: 90%;
     }
     /* --------------------MENU--------------- */
-    .encabezado .menu {
-      display: none;
-    }
-    .encabezado .menuHamburguesa {
-      display: block;
-    }
-
-    .encabezado .menuHamburguesa label {
-      display: block;
-      position: relative;
-      top: -10px;
-      right:10%;
-    }
-
-    .encabezado .menuHamburguesa input {
-      display: block;
-      position: relative;
-      top: -50px;
-    }
-
-    .menuHamburguesa .menu2 {
-      top: 0;
-      display: none;
-      width: 90vw;
-      height: 50vh;
-      background-color: #D5D8DD;
-      margin: 0 auto;
-  }
-  
-  .menuHamburguesa .menu2 ul {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 100%;
-      list-style: none;
-  }
-  
-  .menuHamburguesa .menu2 ul li {
-      width: 100%;
-      height: 100%;
-      margin: 10px auto;
-      text-align: center;
-  }
-  
-  .menuHamburguesa .menu2 ul li a {
-      color: #551A8B;
-      text-decoration: none;
-      font-size: 2rem;
-      font-weight: 700;
-      margin: 0 auto;
-  }
-  
-  .menuHamburguesa .menu2 ul li a:hover {
-      text-decoration: underline;
-      transform: 1s;
-  }
-    .menuHamburguesa input:checked ~ .menu2 {
-      display: inline-block;
-      transition: 1s ;
-    }
-
-    .menuHamburguesa input:checked ~ label {
-      left: 82vw;
-    }
-
-    .menuHamburguesa input:checked  ~ input{
-      top: -50px;
-  }
+    /* autoMediqueries con bootstrap */
 }
 /* MEDIAQUERIE DE INDUMENTARIAS */
 @media screen  and (max-width:750px) {
-
-  .menuHamburguesa input:checked ~ label {
-    left: 75vw;
-  }
-
   .contenedor {
     grid-template-rows: repeat(5, auto);
     grid-template-areas: 
@@ -970,9 +883,6 @@ body {
   }
 }
 @media screen  and (max-width:550px) {
-  .menuHamburguesa input:checked ~ label {
-    left: 65vw;
-  }
   .quienesSomos h1 {
     font-size: 2.2rem;
   }
@@ -1017,15 +927,6 @@ body {
 }
 
 @media screen  and (max-width:400px) {
-  .menuHamburguesa input:checked ~ label {
-    left: 50vw;
-  }
-
-  .menuHamburguesa .menu2 ul li {
-    text-align: left;
-    margin-left: 10px;
-  }
-
   .quienesSomos h1 {
     font-size: 2.2rem;
   }

@@ -4,60 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/estilosDefinitivos.css">
 	<link rel="shortcut icon" href="../img/icons/iconWebPantalones.png">
     <title>Pantalones de DPG</title>
 </head>
 <body>
-	<!-- ----------------------MENU---------------- -->
-	<header class="encabezado">
-		<div class="logo">
-			<a href="../index.html"><img src="../img/logoDP.png" alt="Logo de DPG"></a>
-		</div>
-		<div class="menuHamburguesa">
-			<input type="checkbox" id="menu">
-			<label for="menu"><img src="../img/icons/iconoMenu.png" alt="Menu Desplegable de DPG" class="menuDesplegable"> </label>
-			<nav class="menu2">
-				<ul>
-					<li>
-						<a href="calzados.html">Calzados</a>
+	<!-- ----------------------MENU con bootstrap---------------- -->
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light menu bg-menu">
+			<div class="container-fluid">
+				<a class="navbar-brand w-auto" href="../index.html">
+					<img src="../img/logoDP.png" alt="" class="logo">
+				</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse bg-menu" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="mx-2 stylesLinkNav" href="calzados.html">Calzados</a>
 					</li>
-					<li>
-						<a href="camisas.html">Camisas</a>
+					<li class="nav-item">
+						<a class="mx-2 stylesLinkNav" href="camisas.html">Camisas</a>
 					</li>
-					<li>
-						<a href="pantalones.html">Pantalones</a>
+					<li class="nav-item">
+						<a class="mx-2 stylesLinkNav" href="pantalones.html">Pantalones</a>
 					</li>
-					<li>
-						<a href="trajes.html">Trajes</a>
+					<li class="nav-item">
+						<a class="mx-2 stylesLinkNav" href="trajes.html">Trajes</a>
 					</li>
-					<li>
-						<a href="buzos.html">Buzos</a>
+					<li class="nav-item">
+						<a class="mx-2 stylesLinkNav" href="buzos.html">Buzos</a>
 					</li>
 				</ul>
-			</nav> 
-		</div>
-		<nav class="menu">
-			<ul>
-				<li>
-					<a href="calzados.html">Calzados</a>
-				</li>
-				<li>
-					<a href="camisas.html">Camisas</a>
-				</li>
-				<li>
-					<a href="pantalones.html">Pantalones</a>
-				</li>
-				<li>
-					<a href="trajes.html">Trajes</a>
-				</li>
-				<li>
-					<a href="buzos.html">Buzos</a>
-				</li>
-			</ul>
-		</nav> 
-	
-	</header> 
+			</div>
+			</div>
+		</nav>
+	</header>
 	<!-- ----------------------CONTENEDOR DEL CONTENIDO---------------- -->
 	<div class="contenedor"id="inicio">
 		<!-- ----------------------FILTROS---------------- -->
@@ -437,6 +421,6 @@
 	<div class="menuVerticalFlotante">
 		<a href="#inicio"><img src="../img/icons/flecha-arriba.png" alt=""></a>
 	</div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
