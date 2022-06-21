@@ -362,19 +362,23 @@ width: 80px;
       font-weight: 800;
   }
 
-  .contenedor .indumentarias .galeria .imagen picture a {
-      display: block;
-      font-size: 1.6rem;
-      text-align: center;
-      text-decoration: none;
-      color: #fff;
+  .color-btns {
     background: rgb(10,200,255);
     background: linear-gradient(90deg, rgba(10,200,255,1) 0%, rgba(121,9,120,1) 40%, rgba(160,17,236,1) 74%, rgba(0,212,255,1) 100%);
+  }
+
+  .text-btns {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #fff;
     font-weight: 700;
-      border-radius: 15px;
-      padding: 5px;
-      margin:  50px auto 0 auto;
-      width: 220px;
+  }
+
+  .spaces-btns {
+    display: block;
+    margin:  50px auto 0 auto;
+    width: 60%;
+    border-radius: 20px;
   }
 
   /* indumentaria para camisas */
