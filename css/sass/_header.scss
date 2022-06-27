@@ -1,0 +1,73 @@
+/* --------------- MENU ---------- */
+@keyframes aparecerMenu {
+    0% {
+      transform: translate(0, -75px);
+    }
+  }
+  
+  /* MENU CON BOOTSTRAP */
+.menu {
+    position: fixed;
+    animation: aparecerMenu 1s ease-in;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    z-index: 5;
+  }
+  #navbarSupportedContent {
+  background-color: transparent;
+  }
+  .navbar-nav {
+  background-color: #dddd;
+  text-align: center;
+  margin-right: 60px;
+  }
+  
+  .bg-menu {
+  background: #ddde;
+  }
+  
+  .stylesLinkNav {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #551A8B;
+  }
+  .stylesLinkNav {
+    &:hover {
+        color: #000;
+        transition: 1.2s;
+        text-decoration: underline;
+        }
+  }
+  .menu {
+    a {
+    img {
+        width: 80px;
+    }
+    }
+  }
+
+  /* --------------------MENU VERTICAL FLOTANTE --------------- */
+  
+  .menuVerticalFlotante {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .menuVerticalFlotante { 
+    ul {
+        list-style: none;
+    }
+  }
+
+  .menuVerticalFlotante {
+    ul {
+        li {
+            a {
+                font-size: 50px;
+            }
+        }
+    }
+  }

@@ -1,0 +1,337 @@
+// -------------INDUMENTARIAS -------------
+//@include imagenIndu (nombre, width, height)
+@mixin imagenIndu ($nombreIndu,$widthImg, $heightImg){
+    .imagen#{$nombreIndu} {
+        margin: 50px auto;
+        width: $widthImg;
+        picture {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            img {
+                width: 100%;
+                height: $heightImg;
+            }
+            p {
+                font-size: 2rem;
+                color: #27b1d3;
+                font-weight: 800;
+            }
+            a {
+                display: block;
+                font-size: 1.6rem;
+                text-align: center;
+                text-decoration: none;
+                color: #fff;
+                background: rgb(10,200,255);
+                background: linear-gradient(90deg, rgba(10,200,255,1) 0%, rgba(121,9,120,1) 40%, rgba(160,17,236,1) 74%, rgba(0,212,255,1) 100%);
+                font-weight: 700;
+                border-radius: 15px;
+                padding: 5px;
+                margin:  0 auto;
+                width: 220px;
+            }
+        }
+    }
+}
+.contenedor {
+    width: 90%;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 30px;
+    grid-template-areas: 
+    "filtro galeria galeria"
+    "form form form"
+    "ubicacion ubicacion ubicacion"
+    "rrss rrss rrss";
+    //-------------FILTROS -------------
+    .filtros {
+        width: 250px;
+        height: 47%;
+        grid-area: filtro;
+        background-color: #27b1d3a9;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow:  0 0 15px #000;
+        div {
+            width: 100%;
+            height: auto;
+            margin: 5px 0;
+            h4 {
+                margin-top: 10px;
+                font-size: 1.4rem;
+                font-weight: 600;
+              }
+          }
+        input {
+            display: inline-block;
+            cursor: pointer;
+          }
+        label {
+            cursor: pointer;
+            color: #000;
+            font-size: 20px;
+            font-weight: 400;
+            &:hover {
+                color: #551A8B;
+                text-decoration: underline;
+              }
+          }
+        .generos {
+            .genero {
+                display: flex;
+                width: 100%;
+                height: auto;
+                flex-direction: column;
+              }
+        }
+      }
+      .filtrosCamisas {
+        height: 28%;
+      }
+
+      .filtrosPantalones {
+        height: 25%;
+      }
+
+      .filtrosTrajes {
+        @extend .filtrosPantalones;
+      }
+
+      .filtrosBuzos {
+        @extend .filtrosPantalones;
+      }
+
+      h2 {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+      //--------------- INDUMENTARIAS ----------
+      .indumentarias {
+        grid-area: galeria;
+        width: 100%;
+        border-radius: 15px;
+        background: #fff;
+        h2 {
+            margin-top: 20px;
+            font-size: 3rem;
+            text-align: center;
+            color: #553079;
+            font-weight: 700;
+          }
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            grid-gap: 30px;
+            margin: 60px 0;
+            width: 100%;
+            .imagen {
+                margin: 50px auto;
+                width: 400px;
+                picture {
+                    width: 100%;
+                    height: auto;
+                    margin: 0 auto;
+                    img {
+                        width: 100%;
+                        max-height: 210px;
+                    }
+                    p {
+                        font-size: 2rem;
+                        color: #27b1d3;
+                        font-weight: 800;
+                    }
+                }
+            }
+            //imagen de las camisas 
+            //@include imagenIndu (nombre, width, height)
+            @include imagenIndu($nombreIndu:Camisas,$widthImg:400px, $heightImg:500px);
+            //imagen de las pantalones
+            @include imagenIndu($nombreIndu:Pantalones,$widthImg:380px, $heightImg:600px);
+            //imagen de las trajes
+            @include imagenIndu($nombreIndu:Trajes,$widthImg:370px, $heightImg:600px);
+            //imagen de las buzos
+            @include imagenIndu($nombreIndu:Buzos,$widthImg:370px, $heightImg:600px);
+        }
+    }
+    .pedidos {
+        width: auto;
+        grid-area: form;
+        margin: 100px auto;
+        box-shadow: 0 0 15px #000;
+        border-radius: 15px;
+        padding: 5px;
+        input {
+            display: inline-block;
+          }
+        h2 {
+            margin-top: 20px;
+            font-size: 3rem;
+            font-weight: 800;
+            text-align: center;
+          }
+        form {
+            fieldset {
+                border: #551ab586  5px groove;
+                padding: 20px;
+                border-radius: 15px;
+              }
+            legend {
+                width: 100%;
+                font-size: 2rem;
+                font-weight: 600;
+              }
+            .contacto {
+                margin: 30px 0 10px 0;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-between;
+                gap: 15px;
+                input {
+                    font-size: 1.2rem;
+                    padding: 5px;
+                    width: 100%;
+                  }
+                label {
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                  }
+              }
+              .compraProductos {
+                margin: 30px 0 10px 0;
+                display: flex;
+                flex-flow: column wrap;
+                gap: 15px;
+                margin: auto;
+                p {
+                    font-size: 1.6rem;
+                  }
+                div {
+                    display: inline-block;
+                    margin: 5px 20px;
+                    label {
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                      }
+                    select {
+                        font-size: 1.4rem;
+                      }
+                  }
+              }
+            .entrega {
+                margin: 30px 0 10px 0;
+                display: flex;
+                flex-flow: column wrap;
+                gap: 15px;
+                margin: auto;
+                width: 100%;
+                .retiro {
+                    margin: auto;
+                  }
+                .localidad {
+                    margin: auto;
+                  }
+                div {
+                    input {
+                        margin: 0 10px 0 0;
+                      }
+                    label {
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                      }
+                    select {
+                        font-size: 1.1rem;
+                      }
+                }
+                .mensaje {
+                    display: flex;
+                    flex-direction: column;
+                    label {
+                        text-align: center;
+                        font-size: 1.4rem;
+                        margin: 10px;
+                      }
+                    textarea {
+                        max-width: 500px;
+                        max-height: 250px;
+                        min-width: 300px;
+                        min-height: 150px;
+                        margin: auto;
+                        padding: 5px;
+                        font-size: 1.1rem;
+                        border: 2px solid #551ab5;
+                      }
+                  }
+                  .botones {
+                    margin:  10px auto 30px auto;
+                    input{
+                        padding: 10px;
+                        font-size: 20px;
+                        border: 1px solid #000;
+                        background-color: #551A8B;
+                        color: #fff;
+                        font-weight: 600;
+                        cursor: pointer;
+                        border-radius: 30px;
+                        &:hover {
+                            background: #551ab5;
+                            transition: .5s;
+                          }
+                      }
+                  }
+                  
+              }      
+        }
+      }
+    .ubicacion {
+        grid-area: ubicacion;
+        margin: 20px auto 0 auto;
+        iframe {
+            width: 80vw;
+            min-width: 250px;
+            height: 700px;
+            min-height: 200px;
+            border-radius: 15px;
+          }
+        h2 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 800;
+          }
+        .horarios {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 40px;
+            p {
+                font-size: 1.25em;
+                margin-bottom: 10px;
+                font-weight: 500;
+              }
+          }
+      }
+}
+.color-btns {
+    background: rgb(10,200,255);
+    background: linear-gradient(90deg, rgba(10,200,255,1) 0%, rgba(121,9,120,1) 40%, rgba(160,17,236,1) 74%, rgba(0,212,255,1) 100%);
+  }
+
+.text-btns {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+  }
+
+.spaces-btns {
+    display: block;
+    margin:  50px auto 0 auto;
+    width: 60%;
+    border-radius: 20px;
+  }

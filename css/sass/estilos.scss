@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: rgb(160, 180, 216);
+}
+
+@import "_header"; //menus
+@import "_inicio"; //inicio del Index.html
+@import "_xqComprarnos"; //porque comprarnos del index
+@import "_algCQVendemos"; //Algunas cosas que vendemos del index
+@import "_redesSociales"; //redes sociales general
+@import "_footer"; //footer general
+@import "_indumentarias"; //contenido general de las indumentarias
+@import "_mediaqueries";  //mediaquieries de todas las paginas
+
+    

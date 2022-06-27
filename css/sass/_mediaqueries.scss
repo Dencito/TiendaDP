@@ -1,0 +1,245 @@
+// ------------ MEDIAQUERIES -----------------------
+//mediaqueries de max-width: 1200px
+@media screen  and (max-width:1200px){
+    .cajaPadre {
+        // --------------------QUIENES SOMOS---------------
+        .quienesSomos {
+            width: 90%;
+            .contenido {
+                flex-direction: column;
+            }
+            p {
+                width: 95%;
+            }
+            img {
+                width: 90%;
+                height: 500px;
+                margin: 20px auto;
+            }
+        }     
+    // --------------------PORQUE COMPRARNOS---------------
+    
+        .porqueComprarnos {
+            width: 90%;
+            .imgsPorqueComprarnos {
+                img {
+                    margin: 20px auto;
+                }
+            }
+        }
+    
+        .porqueComprarnos .imgsPorqueComprarnos img {
+            margin: 20px auto;
+        }
+    // -------------------- ALGUNAS COSAS QUE VENDEMOS --------------- 
+        .algunasCosasQueVendemos {
+            width: 90%;
+        }
+
+    }
+  }
+
+  // MEDIAQUERIE DE INDUMENTARIAS 
+  //mediaqueries de max-width: 750px
+@media screen  and (max-width:750px) {
+    .contenedor {
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas: 
+      "filtro filtro filtro"
+      "galeria galeria galeria"
+      "form form form"
+      "ubicacion ubicacion ubicacion"
+      "rrss rrss rrss";
+      .filtros {
+        width: 90vw;
+        height: auto;
+        .tiposDeFiltro {
+            display: flex;
+            flex-wrap: wrap;
+            > div {
+                width: 100px;
+                margin: 0 20px;
+              }
+          }
+        label {
+            font-size: 1rem;
+            font-weight: 400;
+          }
+      }
+      .pedidos {
+        width: 90vw;
+      }
+    }
+  }
+
+  //mediaqueries de max-width: 550px
+  @media screen  and (max-width:550px) {
+    
+    .cajaPadre {  
+        // --------------------QUIENES SOMOS---------------
+        .quienesSomos {
+            h1 {
+                font-size: 2.2rem;
+            }
+            .contenido {
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        // --------------------PORQUE COMPRARNOS---------------
+        .porqueComprarnos {
+            h1 {
+                font-size: 2rem;
+              }
+            img {
+                width: 90vw;
+                height: 50vh;
+              }
+            p {
+                width: 100%;
+                font-size: 1.2rem;
+              }
+            .imgsPorqueComprarnos {
+                img {
+                    width: 80%;
+                    height: 200px;
+                  }
+            }
+        }
+        // --------------------ALGUNAS COSAS QUE VENDEMOS---------------
+        .algunasCosasQueVendemos {
+            .galeria {
+                img {
+                    padding: 15%;
+                    width: 90%;
+                    height: 400px;
+                  }
+                  .calzado {
+                    padding: 10%;
+                    width: 100%;
+                    height: 200px;
+                  }
+            }
+            h1 {
+                font-size: 2rem;
+              }
+        }
+    }
+  }
+
+  //mediaqueries de max-width: 400px
+  @media screen  and (max-width:400px) {
+    @mixin fontSizeInduImg ($indumentaria) {
+        .imagen#{$indumentaria} {
+            picture {
+                a {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    .cajaPadre {
+        // --------------------QUIENES SOMOS --------------
+        .quienesSomos {
+            flex-direction: column;
+            h1 {
+                font-size: 2.2rem;
+              }
+            .contenido {
+                p {
+                    font-size: 1.2rem;
+                  }
+            }
+        }
+        // --------------------PORQUE COMPRARNOS --------------
+        .porqueComprarnos {
+            h1 {
+                font-size: 2.2rem;
+              }
+            p {
+                width: 100%;
+                font-size: 1.2rem;
+              }
+            .imgsPorqueComprarnos {
+                img {
+                    width: 80%;
+                  }
+            }
+        }
+    }
+    .contenedor {
+        // --------------------PEDIDOS --------------
+        .pedidos {
+            form {
+                .entrega {
+                    .mensaje {
+                        textarea {
+                            max-width: 190px;
+                            max-height: 250px;
+                            min-width: 100px;
+                            min-height: 100px;
+                            margin: auto;
+                            padding: 5px;
+                            font-size: 1.1rem;
+                            border: 2px solid #551ab5;
+                          }
+                    }
+                }
+            }
+        }
+        // --------------------INDUMENTARIAS --------------
+        .indumentarias {
+            h2 {
+                font-size: 2.5rem;
+              }
+            .galeria {
+                @include fontSizeInduImg ($indumentaria:"");
+                @include fontSizeInduImg ($indumentaria:Camisas);
+                @include fontSizeInduImg ($indumentaria:Pantalones);
+                @include fontSizeInduImg ($indumentaria:Trajes);
+                @include fontSizeInduImg ($indumentaria:Buzos);
+            }
+        }
+        .pedidos {
+            h2 {
+                font-size: 2.5rem;
+            }
+            form {
+                legend {
+                    font-size: 1.7rem;
+                  }
+                .contacto {
+                    input {
+                        width: 100%;
+                        font-size: 1.1rem;
+                      }
+                    label {
+                        font-size: 1.2rem;
+                      }
+                }
+                .entrega {
+                    .botones {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        input{
+                            margin: 20px auto;
+                          }
+                    }
+                }
+            }
+        }
+        // --------------------UBICACION  --------------
+        .ubicacion h2 {
+            font-size: 2.5rem;
+          }
+    }
+
+    .redesSociales {
+        h1 {
+            font-size: 2.5rem;
+          }
+    }
+  }
+  
+  

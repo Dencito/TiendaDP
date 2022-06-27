@@ -1,0 +1,41 @@
+//-- ---------------PORQUE COMPRARNOS---------- --
+.cajaPadre {
+    .porqueComprarnos {
+        width: 80%;
+        height: auto;
+        margin: 0 auto 20px auto;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: #fff;
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #553079;
+            margin: 30px auto;
+            width: 100%;
+            text-align: center;
+          }
+        p {
+            margin: auto;
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+            padding: 10px;
+            font-weight: 300;
+            width: 60%;
+            span {
+                color: #553079;
+                font-weight: 600;
+              }
+          }
+        .imgsPorqueComprarnos {
+            width: 65%;
+            max-width: 800px;
+            margin: 0 auto;
+            height: 20%;
+          }
+        .img-heigth {
+            height: 600px;
+          }
+      }
+}

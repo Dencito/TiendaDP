@@ -1,0 +1,68 @@
+//---------------QUIENES SOMOS---------- 
+.cajaPadre {
+    display: flex;
+    flex-direction: column;
+    z-index: 6;
+    .quienesSomos {
+        margin: 90px auto 20px auto;
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background-color: #fff;
+        box-shadow: 0 0 15px #000;
+        border-radius: 5px 5px 0 0;
+        h1 {
+            padding-top: 30px;
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            color: #553079;
+            margin: 30px auto;
+            width: 100%;
+            height: auto;
+            animation: MoverTituloQuienesSomos 1.3s ease-in-out;
+        }
+
+        @keyframes MoverTituloQuienesSomos {
+            0% {
+            transform: translate(200px, -300px);
+            }
+        }
+
+        .contenido {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;  
+        }
+
+        p {
+            width: 45%;
+            margin: auto 20px;
+            font-weight: 300;
+            font-size: 1.5rem;
+            padding: 10px;
+            span {
+                color: #553079;
+                font-weight: 600;
+            }
+        }
+
+        img {
+            width: 55%;
+            height: 700px;
+            border-radius: 5px;
+            padding: 30px;
+            animation: aparecerImgQuienesSomos 1.2s ease-out;
+        }
+
+        @keyframes aparecerImgQuienesSomos {
+            0% {
+              transform: translate(-1000px);
+            }
+          }
+    }
+}

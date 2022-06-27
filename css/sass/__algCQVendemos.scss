@@ -1,0 +1,40 @@
+//---------------ALGUNAS COSAS QUE VENDEMOS----------
+.cajaPadre{
+    .algunasCosasQueVendemos {
+        width: 80%;
+        height: auto;
+        margin: 0 auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 0 0 10px #000;
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #553079;
+            width: 100%;
+            text-align: center;
+            margin: 40px 0;
+          }
+        .galeria {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            overflow:hidden;
+            .calzado {
+                width: 450px;
+                height: 300px;
+              }
+            img {
+                width: 300px;
+                height: 500px;
+                margin: 10px;
+                padding: 30px;
+              }
+      }
+    }
+}
