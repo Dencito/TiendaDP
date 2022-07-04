@@ -1,39 +1,4 @@
 // -------------INDUMENTARIAS -------------
-//@include imagenIndu (nombre, width, height)
-@mixin imagenIndu ($nombreIndu,$widthImg, $heightImg){
-    .imagen#{$nombreIndu} {
-        margin: 50px auto;
-        width: $widthImg;
-        picture {
-            width: 100%;
-            height: auto;
-            margin: 0 auto;
-            img {
-                width: 100%;
-                height: $heightImg;
-            }
-            p {
-                font-size: 2rem;
-                color: #27b1d3;
-                font-weight: 800;
-            }
-            a {
-                display: block;
-                font-size: 1.6rem;
-                text-align: center;
-                text-decoration: none;
-                color: #fff;
-                background: rgb(10,200,255);
-                background: linear-gradient(90deg, rgba(10,200,255,1) 0%, rgba(121,9,120,1) 40%, rgba(160,17,236,1) 74%, rgba(0,212,255,1) 100%);
-                font-weight: 700;
-                border-radius: 15px;
-                padding: 5px;
-                margin:  0 auto;
-                width: 220px;
-            }
-        }
-    }
-}
 .contenedor {
     width: 90%;
     margin: 100px auto;
@@ -107,7 +72,7 @@
       }
 
       h2 {
-        font-size: 2rem;
+        font-size: $fsizeSubtitle;
         font-weight: 600;
       }
       //--------------- INDUMENTARIAS ----------
@@ -118,7 +83,7 @@
         background: #fff;
         h2 {
             margin-top: 20px;
-            font-size: 3rem;
+            font-size: $fziseTitle;
             text-align: center;
             color: #553079;
             font-weight: 700;
@@ -142,7 +107,7 @@
                         max-height: 210px;
                     }
                     p {
-                        font-size: 2rem;
+                        font-size: $fsizeSubtitle;
                         color: #27b1d3;
                         font-weight: 800;
                     }
@@ -171,7 +136,7 @@
           }
         h2 {
             margin-top: 20px;
-            font-size: 3rem;
+            font-size: $fziseTitle;
             font-weight: 800;
             text-align: center;
           }
@@ -183,7 +148,7 @@
               }
             legend {
                 width: 100%;
-                font-size: 2rem;
+                font-size: $fsizeSubtitle;
                 font-weight: 600;
               }
             .contacto {
@@ -299,7 +264,7 @@
             border-radius: 15px;
           }
         h2 {
-            font-size: 3rem;
+            font-size: $fziseTitle;
             text-align: center;
             margin-bottom: 40px;
             font-weight: 800;
