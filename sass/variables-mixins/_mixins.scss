@@ -1,0 +1,47 @@
+//@include imagenIndu (nombre, width, height)
+@mixin imagenIndu ($nombreIndu,$widthImg, $heightImg){
+    .imagen#{$nombreIndu} {
+        margin: 50px auto;
+        width: $widthImg;
+        picture {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            img {
+                width: 100%;
+                height: $heightImg;
+            }
+            p {
+                font-size: 2rem;
+                color: #27b1d3;
+                font-weight: 800;
+            }
+            a {
+                display: block;
+                font-size: 1.6rem;
+                text-align: center;
+                text-decoration: none;
+                color: #fff;
+                background: rgb(10,200,255);
+                background: linear-gradient(90deg, rgba(10,200,255,1) 0%, rgba(121,9,120,1) 40%, rgba(160,17,236,1) 74%, rgba(0,212,255,1) 100%);
+                font-weight: 700;
+                border-radius: 15px;
+                padding: 5px;
+                margin:  0 auto;
+                width: 220px;
+            }
+        }
+    }
+}
+
+//MEDIAQUERIES
+
+@mixin fontSizeInduImg ($indumentaria) {
+    .imagen#{$indumentaria} {
+        picture {
+            a {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

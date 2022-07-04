@@ -282,7 +282,7 @@ body {
   .contenedor .filtrosPantalones, .contenedor .filtrosTrajes, .contenedor .filtrosBuzos {
     height: 25%; }
   .contenedor h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 600; }
   .contenedor .indumentarias {
     grid-area: galeria;
@@ -313,7 +313,7 @@ body {
             width: 100%;
             max-height: 210px; }
           .contenedor .indumentarias .galeria .imagen picture p {
-            font-size: 2rem;
+            font-size: 3rem;
             color: #27b1d3;
             font-weight: 800; }
       .contenedor .indumentarias .galeria .imagenCamisas {
@@ -444,7 +444,7 @@ body {
       border-radius: 15px; }
     .contenedor .pedidos form legend {
       width: 100%;
-      font-size: 2rem;
+      font-size: 3rem;
       font-weight: 600; }
     .contenedor .pedidos form .contacto {
       margin: 30px 0 10px 0;

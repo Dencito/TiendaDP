@@ -15,7 +15,7 @@
         border-radius: 5px 5px 0 0;
         h1 {
             padding-top: 30px;
-            font-size: 3rem;
+            font-size: $fziseTitle;
             font-weight: 700;
             text-align: center;
             color: #553079;
@@ -61,8 +61,8 @@
 
         @keyframes aparecerImgQuienesSomos {
             0% {
-              transform: translate(-1000px);
+            transform: translate(-1000px);
             }
-          }
+        }
     }
 }
