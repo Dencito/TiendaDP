@@ -36,7 +36,7 @@ body {
 
 .stylesLinkNav {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 500;
   color: #551A8B; }
 
@@ -106,6 +106,7 @@ body {
     .cajaPadre .quienesSomos img {
       width: 55%;
       height: 700px;
+      object-fit: cover;
       border-radius: 5px;
       padding: 30px;
       animation: aparecerImgQuienesSomos 1.2s ease-out; }
@@ -196,7 +197,7 @@ body {
     flex-direction: row;
     justify-content: center; }
     .redesSociales .iconos a {
-      margin: 0 20px; }
+      margin: 10px 20px; }
     .redesSociales .iconos img {
       width: 60px; }
 
@@ -594,7 +595,7 @@ body {
         display: flex;
         flex-wrap: wrap; }
         .contenedor .filtros .tiposDeFiltro > div {
-          width: 100px;
+          width: 150px;
           margin: 0 20px; }
       .contenedor .filtros label {
         font-size: 1rem;
