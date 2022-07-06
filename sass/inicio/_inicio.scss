@@ -54,6 +54,7 @@
         img {
             width: 55%;
             height: 700px;
+            object-fit: cover;
             border-radius: 5px;
             padding: 30px;
             animation: aparecerImgQuienesSomos 1.2s ease-out;
