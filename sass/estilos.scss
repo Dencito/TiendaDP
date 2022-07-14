@@ -9,15 +9,15 @@
 body {
     background: rgb(160, 180, 216);
 }
-@import "variables-mixins/_variables"; //variables
-@import "variables-mixins/_mixins"; //Mixins 
-@import "common/_header"; //menus
-@import "inicio/_inicio"; //inicio del Index.html
-@import "inicio/_comprarnos"; //porque comprarnos del index
-@import "inicio/_vendemos"; //Algunas cosas que vendemos del index
-@import "common/_redesSociales"; //redes sociales general
-@import "common/_footer"; //footer general
-@import "indumentarias/_indumentarias"; //contenido general de las indumentarias
-@import "mediaqueries/_mediaqueries";  //mediaquieries de todas las paginas
+@import "variables-mixins/variables"; //variables
+@import "variables-mixins/mixins"; //Mixins 
+@import "common/header"; //menus
+@import "inicio/inicio"; //inicio del Index.html
+@import "inicio/comprarnos"; //porque comprarnos del index
+@import "inicio/vendemos"; //Algunas cosas que vendemos del index
+@import "common/redesSociales"; //redes sociales general
+@import "common/footer"; //footer general
+@import "indumentarias/indumentarias"; //contenido general de las indumentarias
+@import "mediaqueries/mediaqueries";  //mediaquieries de todas las paginas
 
     
